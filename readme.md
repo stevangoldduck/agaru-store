@@ -1,5 +1,6 @@
 ## Agaru Store
 Agaru store is grocery store with cashless payment. In our milestones, we want to make everybody easy to shop without any queue to pay the bill.
+Video link here : https://drive.google.com/file/d/1masVzMgiR34REcY8EjCWwWLa8c3kZZXi/view?usp=sharing
 
 ## Requirements
 1. Barcode number using EAN-13
