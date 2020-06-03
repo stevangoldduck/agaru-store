@@ -15,8 +15,9 @@ Clone this repo
 1. `composer install`
 2.  Setup your MySql DB
 3.  Setup your DB in `.env` file, copy `.env.example` if not exist
-4. `php artisan migrate`
-5. `php artisan db:seed`
+4. `composer artisan key:generate`
+5. `php artisan migrate`
+6. `php artisan db:seed`
 
 We are not provide Product and Product Category creation, in case you want to create another product just do with Laravel Tinker
 1. `php artisan tinker`
