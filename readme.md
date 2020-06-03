@@ -15,7 +15,7 @@ Clone this repo
 1. `composer install`
 2.  Setup your MySql DB
 3.  Setup your DB in `.env` file, copy `.env.example` if not exist
-4. `composer artisan key:generate`
+4. `php artisan key:generate`
 5. `php artisan migrate`
 6. `php artisan db:seed`
 
