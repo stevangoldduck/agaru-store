@@ -15,7 +15,7 @@ class ProductTableSeeder extends Seeder
     public function run()
     {
         Product::create([
-            'name'  => "Tonkat Baton",
+            'name'  => "Tongkat Baton",
             'category_id' => 1,
             'ean_number' => rand(pow(10, 13-1), pow(10, 13)-1),
             'ean_number_img_path'  => '/storage/public/ean/20200602_ean.png',
