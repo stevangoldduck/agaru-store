@@ -1,10 +1,41 @@
+## Agaru Store
+Agaru store is grocery store with cashless payment. In our milestones, we want to make everybody easy to shop without any queue to pay the bill.
+
+## Requirements
+1. Barcode number using EAN-13
+2. PHP 5.6+
+3. MySql
+4. Laravel 5.8
+
+## How to Use this API?
 Clone this repo
 
 ## First to do
 1. `composer install`
-2.  Setup your DB in `.env` file, copy `.env.example` if not exist
-3. `php artisan migrate`
-4. `php artisan db:seed`
+2.  Setup your MySql DB
+3.  Setup your DB in `.env` file, copy `.env.example` if not exist
+4. `php artisan migrate`
+5. `php artisan db:seed`
+
+We are not provide Product and Product Category creation, in case you want to create another product just do with Laravel Tinker
+1. `php artisan tinker`
+
+<b> Product Creation </b>
+```
+$product = new \App\Product();
+$product->name = 'product_name';
+$product->price = 50000;
+$product->category_id = 1;
+$product->ean_number = rand(pow(10, 13-1), pow(10, 13)-1);
+$product->ean_number_img_path = '/storage/public/ean/upto_u_ean.png'
+```
+
+<b> Product Category Creation </b>
+```
+$productCat = new \App\ProductCategory();
+$productCat->name = 'product_name';
+$productCat->slug = 'up_to_u_but_unique';
+```
 
 ## API Documentation Table
 
